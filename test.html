@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Chicago Open Data</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="quickstart.js"></script>
+
+</head>
+<body>
+	<header><h1>Select Area</h1></header>
+	<form>
+		 <select id="area" name="area">
+		 	<option value= "ALBANY PARK" > ALBANY PARK </option>
+			<option value= "ARCHER HEIGHTS" > ARCHER HEIGHTS </option>
+			<option value= "ARMOUR SQUARE" > ARMOUR SQUARE </option>
+			<option value= "ASHBURN" > ASHBURN </option>
+			<option value= "AUBURN GRESHAM" > AUBURN GRESHAM </option>
+			<option value= "AUSTIN" > AUSTIN </option>
+			<option value= "AVALON PARK" > AVALON PARK </option>
+			<option value= "AVONDALE" > AVONDALE </option>
+			<option value= "BELMONT CRAGIN" > BELMONT CRAGIN </option>
+			<option value= "BEVERLY" > BEVERLY </option>
+			<option value= "BRIDGEPORT " > BRIDGEPORT  </option>
+			<option value= "BRIGHTON PARK" > BRIGHTON PARK </option>
+			<option value= "BURNSIDE" > BURNSIDE </option>
+			<option value= "CALUMET HEIGHTS" > CALUMET HEIGHTS </option>
+			<option value= "CHATHAM" > CHATHAM </option>
+			<option value= "CHICAGO LAWN" > CHICAGO LAWN </option>
+			<option value= "CHICAGO" > CHICAGO </option>
+			<option value= "CLEARING" > CLEARING </option>
+			<option value= "DOUGLAS " > DOUGLAS  </option>
+			<option value= "DUNNING" > DUNNING </option>
+			<option value= "EAST GARFIELD PARK" > EAST GARFIELD PARK </option>
+			<option value= "EAST SIDE" > EAST SIDE </option>
+			<option value= "EDGEWATER" > EDGEWATER </option>
+			<option value= "EDISON PARK" > EDISON PARK </option>
+			<option value= "ENGLEWOOD" > ENGLEWOOD </option>
+			<option value= "FOREST GLEN" > FOREST GLEN </option>
+			<option value= "FULLER PARK" > FULLER PARK </option>
+			<option value= "GAGE PARK" > GAGE PARK </option>
+			<option value= "GARFIELD RIDGE" > GARFIELD RIDGE </option>
+			<option value= "GRAND BOULEVARD" > GRAND BOULEVARD </option>
+			<option value= "GREATER GRAND CROSSING" > GREATER GRAND CROSSING </option>
+			<option value= "HEGEWISCH" > HEGEWISCH </option>
+			<option value= "HERMOSA" > HERMOSA </option>
+			<option value= "HUMBOLDT PARK" > HUMBOLDT PARK </option>
+			<option value= "HYDE PARK" > HYDE PARK </option>
+			<option value= "IRVING PARK" > IRVING PARK </option>
+			<option value= "JEFFERSON PARK" > JEFFERSON PARK </option>
+			<option value= "KENWOOD" > KENWOOD </option>
+			<option value= "LAKE VIEW" > LAKE VIEW </option>
+			<option value= "LINCOLN PARK" > LINCOLN PARK </option>
+			<option value= "LINCOLN SQUARE" > LINCOLN SQUARE </option>
+			<option value= "LOGAN SQUARE" > LOGAN SQUARE </option>
+			<option value= "LOOP" > LOOP </option>
+			<option value= "LOWER WEST SIDE" > LOWER WEST SIDE </option>
+			<option value= "MCKINLEY PARK" > MCKINLEY PARK </option>
+			<option value= "MONTCLARE" > MONTCLARE </option>
+			<option value= "MORGAN PARK" > MORGAN PARK </option>
+			<option value= "MOUNT GREENWOOD" > MOUNT GREENWOOD </option>
+			<option value= "NEAR NORTH SIDE" > NEAR NORTH SIDE </option>
+			<option value= "NEAR SOUTH SIDE" > NEAR SOUTH SIDE </option>
+			<option value= "NEAR WEST SIDE" > NEAR WEST SIDE </option>
+			<option value= "NEW CITY" > NEW CITY </option>
+			<option value= "NORTH CENTER" > NORTH CENTER </option>
+			<option value= "NORTH LAWNDALE" > NORTH LAWNDALE </option>
+			<option value= "NORTH PARK" > NORTH PARK </option>
+			<option value= "NORWOOD PARK" > NORWOOD PARK </option>
+			<option value= "O'HARE" > O'HARE </option>
+			<option value= "OAKLAND" > OAKLAND </option>
+			<option value= "PORTAGE PARK" > PORTAGE PARK </option>
+			<option value= "PULLMAN" > PULLMAN </option>
+			<option value= "RIVERDALE" > RIVERDALE </option>
+			<option value= "ROGERS PARK" > ROGERS PARK </option>
+			<option value= "ROSELAND" > ROSELAND </option>
+			<option value= "SOUTH CHICAGO" > SOUTH CHICAGO </option>
+			<option value= "SOUTH DEERING" > SOUTH DEERING </option>
+			<option value= "SOUTH LAWNDALE" > SOUTH LAWNDALE </option>
+			<option value= "SOUTH SHORE" > SOUTH SHORE </option>
+			<option value= "UPTOWN" > UPTOWN </option>
+			<option value= "WASHINGTON HEIGHTS" > WASHINGTON HEIGHTS </option>
+			<option value= "WASHINGTON PARK" > WASHINGTON PARK </option>
+			<option value= "WEST ELSDON" > WEST ELSDON </option>
+			<option value= "WEST ENGLEWOOD" > WEST ENGLEWOOD </option>
+			<option value= "WEST GARFIELD PARK" > WEST GARFIELD PARK </option>
+			<option value= "WEST LAWN" > WEST LAWN </option>
+			<option value= "WEST PULLMAN" > WEST PULLMAN </option>
+			<option value= "WEST RIDGE" > WEST RIDGE </option>
+			<option value= "WEST TOWN" > WEST TOWN </option>
+			<option value= "WOODLAWN" > WOODLAWN </option>
+		</select>
+		<button type="button" id="search">Search</button>
+	</form>
+	<div id="list">
+		<table>
+		</table>
+	</div>
+	<!-- Identify where the chart should be drawn. -->
+  	<div id="myChart"/>
+	<footer></footer>
+</body>
+</html>
