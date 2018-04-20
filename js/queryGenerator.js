@@ -1,14 +1,17 @@
 var matrix = [ ] ;
 var year;
+
+
 function myFunction() {
-    year = document.getElementById("mySelect").value;
-    document.getElementById("demo").innerHTML = "You selected: " + year;
-    var param = "1ST TRIMESTER";
+    year = document.getElementById("year").value;
+    category = document.getElementById("category").value;
+    document.getElementById("demo").innerHTML = "You selected: " + year + " and " + category + ".";
+    var param = category;
     var querytxt1 = "prefix prenatal:<https://data.cityofchicago.org/resource/_2q9j-hh6g/>"+
     "prefix preterm:<https://data.cityofchicago.org/resource/rhy3-4x2f/>"+
     "SELECT ?preterm_percent ?area ?prenatal_percent "+
     "WHERE {"+
-     "?cell prenatal:trimester_prenatal_care_began '1ST TRIMESTER' ."+
+     "?cell prenatal:trimester_prenatal_care_began '" + category + "' ."+
      "?cellterm preterm:percent_"+year+" ?preterm_percent."+
      "?cellterm preterm:community_area_name ?area."+
      "?cell prenatal:community_area_name ?area."+

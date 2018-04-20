@@ -12,8 +12,12 @@ header {
 }
 
 h1 {
-	color: white;
+	color: #daf1f1;
 	font-size: 3em;
+}
+
+h2 {
+	color: white;
 }
 
 form, div {

@@ -6,12 +6,11 @@
 </head>
 <body onload="myFunction(); init();">
   <header>
-    <h1>Preterm Births versus Prenatal Care Administered</h1>
+    <h1>Prenatal Care Administered versus Preterm Births</h1>
     <h2>Chicago 1999-2009</h2>
   </header>
 
-<select id="mySelect" onchange="myFunction()">
-  <option value=""> 
+<select id="year" onchange="myFunction()">
   <option value="1999"> 1999
   <option value="2000"> 2000
   <option value="2001"> 2001
@@ -23,6 +22,13 @@
   <option value="2007"> 2007
   <option value="2008"> 2008
   <option value="2009"> 2009
+</select>
+
+<select id="category" onchange="myFunction()">
+  <option value="1ST TRIMESTER"> 1st Trimester
+  <option value="2ND TRIMESTER"> 2nd Trimester
+  <option value="3RD TRIMESTER"> 3rd Trimester
+  <option value="NO PRENATAL CARE"> No Prenatal Care
 </select>
 
 <p id="demo"></p>
