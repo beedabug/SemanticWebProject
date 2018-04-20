@@ -13,4 +13,6 @@ Files included in this project:
     quickstart.js
   lib -> 
     jquery-3.3.1.min.js
+  css ->
+    styling.css
 
