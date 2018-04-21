@@ -13,7 +13,7 @@ function drawChart() {
       }
 
        var options = {
-          title: 'Preterm_Percent vs. Prenatal_Percent',
+          title: 'Preterm Birth Percentage vs. Population Percentage Receiving Prenatal Care',
           hAxis: {title: 'Preterm_Percent', minValue: 0, maxValue: 25},
           vAxis: {title: 'Prenatal_Percent', minValue: 0, maxValue: max1 + 10},
           legend: 'none',
