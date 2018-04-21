@@ -4,44 +4,84 @@
      <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link rel="stylesheet" href="css/styling.css">
+     <script src="lib/jquery-3.3.1.min.js"></script>
+     <link href="sticky-footer.css" rel="stylesheet">
+    
 </head>
 <body onload="myFunction();init()">
-<div id="element1">
-<select class="form-control" id="mySelect" onchange="myFunction()";>
-  <option value="1999"> 1999
-  <option value="2000"> 2000
-  <option value="2001"> 2001
-  <option value="2002"> 2002
-  <option value="2003"> 2003
-  <option value="2004"> 2004
-  <option value="2005"> 2005
-  <option value="2006"> 2006
-  <option value="2007"> 2007
-  <option value="2008"> 2008
-  <option value="2009"> 2009
-</select>
+<div class="container theme-showcase">
+  <div class="jumbotron">
+    <h1>CS6315 Semantic Web Final Project</h1>
+    <p>This an interactive website to show the relationship between prenatal care and preterm births in the city of Chicago from 1999 to 2009</p>
+  </div>
+  <div class="row">
+        <div class="col-md-4">
+          <h2>Preterm Birth Data</h2>
+          <p>Preterm birth data from the city of Chicago, detailing the distribution of preterm births by neighborhood</p>
+          <p><a class="btn btn-default" href="https://catalog.data.gov/dataset/public-health-statistics-preterm-births-in-chicago-by-year-1999-2009-55f9f" role="button" target="_blank">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Prenatal Care Data</h2>
+          <p>This dataset describes the administration of prenatal in Chicago, by neighborhood and trimester</p>
+          <p><a class="btn btn-default" href="https://catalog.data.gov/dataset/public-health-statistics-prenatal-care-in-chicago-by-year-1999-2009-ed1c9" role="button" target="_blank">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Github</h2>
+          <p>View the source for this project here</p>
+          <p><a class="btn btn-default" href="https://github.com/debaimade/SemanticWebProject" role="button" target="_blank">View details &raquo;</a></p>
+        </div>
+  </div>
+  </br>
+  </br>
+
+  <h2>How to use this site</h2>
+  <p>Select the year of interest from the first drop down, then pick the trimester to see how the trends change over years and trimesters</p>
+  <div class="row">
+    <div class="col-md-6">
+        <select class="form-control" id="mySelect" onchange="myFunction()";>
+        <option value="1999"> 1999
+        <option value="2000"> 2000
+        <option value="2001"> 2001
+        <option value="2002"> 2002
+        <option value="2003"> 2003
+        <option value="2004"> 2004
+        <option value="2005"> 2005
+        <option value="2006"> 2006
+        <option value="2007"> 2007
+        <option value="2008"> 2008
+        <option value="2009"> 2009
+        </select>
+    </div>
+    <div class="col-md-6">
+      <select class="form-control" id="category" onchange="myFunction();init()">
+      <option value="1ST TRIMESTER"> 1st Trimester
+      <option value="2ND TRIMESTER"> 2nd Trimester
+      <option value="3RD TRIMESTER"> 3rd Trimester
+      <option value="NO PRENATAL CARE"> No Prenatal Care
+      </select>
+    </div>
+  </div>
+
+  </br>
+  </br>
+
+  <p id="demo"></p>
+
+  <p id="demo2"></p>
+
+  <div id="myChart"></div>
+
+  <div id="chart_div"></div>
+
+  <hr>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Made in Dallas, during lunch ;)</p>
+    </div>
+  </footer>
 </div>
-<div id="element2">
-<select class="form-control" id="category" onchange="myFunction();init()">
-  <option value="1ST TRIMESTER"> 1st Trimester
-  <option value="2ND TRIMESTER"> 2nd Trimester
-  <option value="3RD TRIMESTER"> 3rd Trimester
-  <option value="NO PRENATAL CARE"> No Prenatal Care
-</select>
-</div>
 
-</br>
-</br>
-
-<p id="demo"></p>
-
-<p id="demo2"></p>
-
-<div id="myChart"></div>
-
-<div id="chart_div"></div>
-
-<script src="lib/jquery-3.3.1.min.js"></script>
+<!-- <script src="lib/jquery-3.3.1.min.js"></script> -->
 <!--<script type="text/javascript" src="js/app.js">
 </script>!-->
 
