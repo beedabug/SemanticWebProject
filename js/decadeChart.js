@@ -22,8 +22,8 @@ function drawColumnChart() {
         hAxis: {
           format: '',
           viewWindow: {
-            min: 1999,
-            max: 2009
+            min: 1998,
+            max: 2010
           },
           title: 'Year'
         },
