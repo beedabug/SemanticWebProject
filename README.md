@@ -6,12 +6,12 @@ In order to run this web demo, both datasets should be hosted together on the us
   1. index.html 
   2. README.md
   ###### js 
-    *decadeChart.js
-    *decadeTrend.js
-    *queryGenerator.js
-    *quickstart.js
+    ⋅⋅* decadeChart.js
+    ⋅⋅* decadeTrend.js
+    ⋅⋅* queryGenerator.js
+    ⋅⋅* quickstart.js
   ###### lib 
-    *jquery-3.3.1.min.js
+    ⋅⋅* jquery-3.3.1.min.js
   ###### css 
-    *styling.css
+    ⋅⋅* styling.css
 
