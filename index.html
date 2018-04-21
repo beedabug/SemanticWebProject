@@ -2,16 +2,12 @@
 <html>
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-     <link rel="stylesheet" type="text/css" href="styles.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/styling.css">
 </head>
-<body onload="myFunction(); init();">
-  <header>
-    <h1>Preterm Births versus Prenatal Care Administered</h1>
-    <h2>Chicago 1999-2009</h2>
-  </header>
-
-<select id="mySelect" onchange="myFunction()">
-  <option value=""> 
+<body onload="myFunction();init()">
+<div id="element1">
+<select class="form-control" id="mySelect" onchange="myFunction()";>
   <option value="1999"> 1999
   <option value="2000"> 2000
   <option value="2001"> 2001
@@ -24,8 +20,22 @@
   <option value="2008"> 2008
   <option value="2009"> 2009
 </select>
+</div>
+<div id="element2">
+<select class="form-control" id="category" onchange="myFunction();init()">
+  <option value="1ST TRIMESTER"> 1st Trimester
+  <option value="2ND TRIMESTER"> 2nd Trimester
+  <option value="3RD TRIMESTER"> 3rd Trimester
+  <option value="NO PRENATAL CARE"> No Prenatal Care
+</select>
+</div>
+
+</br>
+</br>
 
 <p id="demo"></p>
+
+<p id="demo2"></p>
 
 <div id="myChart"></div>
 
@@ -41,5 +51,7 @@
   </script>
 <script type="text/javascript" src= "js/queryGenerator.js"></script>
 <script type="text/javascript" src= "js/quickstart.js"></script>
+<script type="text/javascript" src= "js/decadeTrend.js"></script>
+<script type="text/javascript" src= "js/decadeChart.js"></script>
 </body>
 </html>

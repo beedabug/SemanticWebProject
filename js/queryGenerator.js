@@ -1,14 +1,15 @@
 var matrix = [ ] ;
 var year;
 function myFunction() {
+
     year = document.getElementById("mySelect").value;
-    document.getElementById("demo").innerHTML = "You selected: " + year;
-    var param = "1ST TRIMESTER";
+    category = document.getElementById("category").value;
+    var param = category;
     var querytxt1 = "prefix prenatal:<https://data.cityofchicago.org/resource/_2q9j-hh6g/>"+
     "prefix preterm:<https://data.cityofchicago.org/resource/rhy3-4x2f/>"+
     "SELECT ?preterm_percent ?area ?prenatal_percent "+
     "WHERE {"+
-     "?cell prenatal:trimester_prenatal_care_began '1ST TRIMESTER' ."+
+     "?cell prenatal:trimester_prenatal_care_began '" + category + "' ."+
      "?cellterm preterm:percent_"+year+" ?preterm_percent."+
      "?cellterm preterm:community_area_name ?area."+
      "?cell prenatal:community_area_name ?area."+
@@ -27,6 +28,7 @@ function myFunction() {
     xmlquery1.setRequestHeader ('Accept', 'application/sparql-results+xml');
     // Set up callback to get the response asynchronously...
     xmlquery1.onreadystatechange = function() {
+        console.log(xmlquery1.responseText);
         if (xmlquery1.readyState == 4) {
             if (xmlquery1.status == 200) {
                 var xml =  (new DOMParser()).parseFromString(xmlquery1.responseText, "text/xml");
