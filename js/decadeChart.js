@@ -20,6 +20,7 @@ function drawColumnChart() {
           1: {type: 'exponential', lineWidth: 10, opacity: .3}
         },
         hAxis: {
+          format: '',
           viewWindow: {
             min: 1995,
             max: 2015
