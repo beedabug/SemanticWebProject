@@ -14,7 +14,7 @@ function drawColumnChart() {
       }
       //console.log(data);
         var options = {
-        title: 'Avg. Preterm vs Avg Prenatal over 10 Year Period',
+        title: 'Preterm Birth Percentage vs Population Percentage Receiving Prenatal Care (10 Year Average)',
         trendlines: {
           0: {type: 'linear', lineWidth: 5, opacity: .3},
           1: {type: 'exponential', lineWidth: 10, opacity: .3}
