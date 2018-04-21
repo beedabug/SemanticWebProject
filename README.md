@@ -2,6 +2,7 @@ In order to run this web demo, both datasets should be hosted together on the us
 
 Files included in this project:
 
+SemanticWebProject
   index.html 
   README.md
   js ->
